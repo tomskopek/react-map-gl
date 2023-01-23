@@ -391,7 +391,7 @@ const handlerNames: (keyof MapboxProps)[] = [
   'keyboard',
   'doubleClickZoom',
   'touchZoomRotate',
-  'touchPitch'
+  'touchPitch',
 ];
 
 /**
@@ -775,6 +775,7 @@ export default class Mapbox {
         }
       }
     }
+    map.touchZoomRotate.disableRotation();
     return changed;
   }
 
